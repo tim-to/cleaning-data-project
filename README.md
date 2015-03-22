@@ -3,8 +3,7 @@ This dataset contains the averages of mean and standard deviations from the wear
 device project conducted by Davide Anguita et al. (see footnote 1) 
 
 #Source Data File
-The zipped data file:
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+The [zipped data file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
 is downloaded into the working directory of R and where the run_analysis.R script resides. 
 
 All the data files for this project is unzipped into the UCI_HAR_Dataset subdirectory in 
@@ -65,17 +64,17 @@ as defined in the "What are the observations" section.
 
 #run_analysis.R explanation
 
-**Load the test data
-	test.x <- read.table("UCI_HAR_Dataset/test/X_test.txt")
+**Load the test data**
+	`<test.x <- read.table("UCI_HAR_Dataset/test/X_test.txt")
 	test.y <- read.table("UCI_HAR_Dataset/test/Y_test.txt")
-	test.subject <- read.table("UCI_HAR_Dataset/test/subject_test.txt")
+	test.subject <- read.table("UCI_HAR_Dataset/test/subject_test.txt")>`
 
 **Load the train data**
 	`train.x <- read.table("UCI_HAR_Dataset/train/X_train.txt")
 	train.y <- read.table("UCI_HAR_Dataset/train/Y_train.txt")
 	train.subject <- read.table("UCI_HAR_Dataset/train/subject_train.txt")`
 
-**Join the subjects and activity vectors to the test and train data as leading columns **
+**Join the subjects and activity vectors to the test and train data as leading columns**
 	`test <- cbind(test.subject, test.y,test.x)
 	train <- cbind(train.subject, train.y,train.x)`
 **Join the test and train data frames together as collections of rows.**
@@ -108,7 +107,7 @@ as defined in the "What are the observations" section.
 **Write the data into file without the row names**
 	`write.table(final, "final_fitbit.txt", row.names = FALSE)`
 
-*Use this command to read the result file :* 
+**Use this command to read the result file :** 
 `read.table("final_fitbit.txt", header = TRUE)`
 
 **This function takes the input data frame and replace the label id with the given label**
@@ -122,8 +121,8 @@ as defined in the "What are the observations" section.
 
 
 ##footnotes
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
+\[1\] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
 Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly 
 Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). 
 Vitoria-Gasteiz, Spain. Dec 2012
-[2] Hadley Wickham, "Tidy Data", Journal of Statistical Software, Volumn VV, issue II
+\[2\] Hadley Wickham, "Tidy Data", Journal of Statistical Software, Volumn VV, issue II
