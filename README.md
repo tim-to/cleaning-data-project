@@ -24,7 +24,8 @@ additional vectors obtained by computing derived data on the data from all subje
 has to do with the "angle" variable. Therefore, these variables are not related to 
 individual subjects but has to do with the group of all subjects. As discussed in the 
 next section only 
-> "the average of each variable for each activity and *each subject*"
+> "the average of each variable for each activity and **each subject**"
+
 should be part of the tidy dataset.
 
 
@@ -65,26 +66,32 @@ as defined in the "What are the observations" section.
 #run_analysis.R explanation
 
 **Load the test data**
-	`<test.x <- read.table("UCI_HAR_Dataset/test/X_test.txt")
+
+	`test.x <- read.table("UCI_HAR_Dataset/test/X_test.txt")
 	test.y <- read.table("UCI_HAR_Dataset/test/Y_test.txt")
-	test.subject <- read.table("UCI_HAR_Dataset/test/subject_test.txt")>`
+	test.subject <- read.table("UCI_HAR_Dataset/test/subject_test.txt")`
 
 **Load the train data**
+
 	`train.x <- read.table("UCI_HAR_Dataset/train/X_train.txt")
 	train.y <- read.table("UCI_HAR_Dataset/train/Y_train.txt")
 	train.subject <- read.table("UCI_HAR_Dataset/train/subject_train.txt")`
 
 **Join the subjects and activity vectors to the test and train data as leading columns**
-	`test <- cbind(test.subject, test.y,test.x)
-	train <- cbind(train.subject, train.y,train.x)`
+	
+	```test <- cbind(test.subject, test.y,test.x)
+	train <- cbind(train.subject, train.y,train.x)```
 **Join the test and train data frames together as collections of rows.**
+	
 	`joined <- rbind(test,train)`
 
 **Read the feature descriptions**
+	
 	`features <- read.table("UCI_HAR_Dataset/features.txt", stringsAsFactors=F)[,2]`
 
-**Use the feature descriptions from the features.txt file and the labels "subject" and**
-**"activity" as variable names.**
+**Use the feature descriptions from the features.txt file and the labels "subject" and
+"activity" as variable names.**
+
 	`names(joined)<-c("subjects", "activities", features)`
 
 **Select only the variable with names that contains mean, standard deviation, subject**
