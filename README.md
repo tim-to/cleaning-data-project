@@ -8,6 +8,7 @@ is downloaded into the working directory of R and where the run_analysis.R scrip
 
 All the data files for this project is unzipped into the UCI_HAR_Dataset subdirectory in 
 the R working directory. All data files are read from these local directories: 
+
 UCI_HAR_Dataset/
 UCI_HAR_Dataset/test/
 UCI_HAR_Dataset/train/
@@ -62,10 +63,10 @@ a unique combination of subject and activity on its own row. Finally, all rows i
 dataset have exactly the same semantic meaning and therefore the same type of observations
 as defined in the "What are the observations" section. 
 
-**According to the tidy data set definition, *this is a tidy dataset.***
+*According to the tidy data set definition, **this is a tidy dataset.**
 
 
-#run_analysis.R explanation
+#run_analysis.R Explanation
 
 **Load the test data**
 
@@ -99,7 +100,7 @@ as defined in the "What are the observations" section.
 **Select only the variables with names that contains "mean", "std", "subject"
 and "activities".**
 	
-	x <- joined[, grep("subjects|activities|*mean*|*std*", colnames(joined))]`
+	x <- joined[, grep("subjects|activities|*mean*|*std*", colnames(joined))]
 
 **Re-organize variables accoring to the subject and activities**
 
@@ -107,7 +108,7 @@ and "activities".**
 
 **Calculate the average values for each mean and standard deviation measurements for
 each subject and each activities while grouping the measurements around each unique
-subject and activity combination.*
+subject and activity combination.**
 
 	x2 <-dcast(x1, subjects + activities ~ variable, mean)
 
@@ -122,10 +123,6 @@ in the data frame with their corresponding name**
 	
     write.table(final, "final_fitbit.txt", row.names = FALSE)
 
-**Use this command to read the result file :**
-
-    read.table("final_fitbit.txt", header = TRUE)
-
 **This function takes the input data frame and replace the label id with the given label
 names.**
 
@@ -135,6 +132,12 @@ names.**
 	  }
 	  df
 	}
+
+:thumbsup:
+**If you are interested in read the provided tidy dataset into your own R development 
+environment, use this command to read it from your working directory:**
+
+    read.table("final_fitbit.txt", header = TRUE)
 
 
 ##References
