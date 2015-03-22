@@ -66,6 +66,7 @@ a unique combination of subject and activity on its own row. Finally, all rows i
 dataset have exactly the same semantic meaning and therefore the same type of observations
 as defined in the "What are the observations" section. 
 
+:round_pushpin:
 *According to the tidy data set definition, this is a tidy dataset.*
 
 
