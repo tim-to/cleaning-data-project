@@ -65,7 +65,7 @@ as defined in the "What are the observations" section.
 
 #run_analysis.R explanation
 
-**Load the test data**
+**Load the test data
 	test.x <- read.table("UCI_HAR_Dataset/test/X_test.txt")
 	test.y <- read.table("UCI_HAR_Dataset/test/Y_test.txt")
 	test.subject <- read.table("UCI_HAR_Dataset/test/subject_test.txt")
