@@ -1,4 +1,3 @@
-wd <- "/Users/timto/Documents/0-cleaning-data/"
 library(reshape2)
 test.x <- read.table("UCI_HAR_Dataset/test/X_test.txt")
 test.y <- read.table("UCI_HAR_Dataset/test/Y_test.txt")
