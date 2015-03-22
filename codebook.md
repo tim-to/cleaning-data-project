@@ -66,7 +66,8 @@ For example the number 1 is used as an activity id in the measurement file while
 3. Replace the measurement id with meaningful names.
 4. Using the meaningful names, select only the mean and standard deviation data and as a result also remove duplicated measurements. 
 5. Organize the measurements base on the subject and activities.
-6. Replace the activity ids with their more meaningful names.
+6. Calculate the averages for each subject and each activity and replace the measurements belonging to these group with the averages. 
+7. Replace the activity ids with their more meaningful names.
 
 For a more detail description of why the resultant dataset is a tidy dataset and how the 
 run_analysis script works, please refer to this project's [README file](https://github.com/tim-to/cleaning-data-project/blob/master/README.md) 

@@ -32,6 +32,9 @@ next section only
 
 should be part of the tidy dataset.
 
+There are some debates as to whether mean frequencies of measurement should be included. 
+However, a careful examination of the course instruction and the feature info from the 
+original dataset does not clearly exclude mean frequencies so they are included.
 
 ##What are the observations 
 
