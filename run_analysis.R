@@ -11,6 +11,7 @@ test <- cbind(test.subject, test.y,test.x)
 train <- cbind(train.subject, train.y,train.x)
 joined <- rbind(test,train)
 
+# Read in the names of the variables as a character vector but leave out the id column
 features <- read.table("UCI_HAR_Dataset/features.txt", stringsAsFactors=F)[,2]
 
 #replace variable names with meaningful ones from features.txt
@@ -22,7 +23,7 @@ x <- joined[, grep("subjects|activities|*mean*|*std*", colnames(joined))]
 # re-organize variables accoring to the subject and activities
 x1 <-melt(x,id=c("subjects", "activities"))
 
-# caculate the average values for each subject and each activities as stated in the 
+# Calculate the average values for each subject and each activities as stated in the 
 # course project
 x2 <-dcast(x1, subjects + activities ~ variable, mean)
 

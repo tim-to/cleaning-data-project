@@ -91,7 +91,7 @@ as defined in the "What are the observations" section.
 	
 	joined <- rbind(test,train)`
 
-**Read the feature descriptions**
+**Read in the names of the variables as a character vector but leave out the id column**
 	
 	features <- read.table("UCI_HAR_Dataset/features.txt", stringsAsFactors=F)[,2]
 

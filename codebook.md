@@ -11,7 +11,7 @@ The original data was collected using 30 human subjects wearing electronic measu
 devices which record the subjects' geospatial 3D locations performing six types of 
 activities. These measurements were then filtered and transformed in multiple stages into
 different types of measurements. Each measurement is normalized and bounded to the range of 
-(-1, +1). These measurements (561 of them) are the variables for this project. 
+(-1, +1). These measurements (561 of them) are the measurement variables for this project. 
 
 The measurements were arbitrarily separated into a training (7352 observations X 561 
 variables) and testing (2947 observations X 561 variables) sets of data. 
@@ -19,17 +19,31 @@ variables) and testing (2947 observations X 561 variables) sets of data.
 Each set contains a raw data fie with the 
 measurements but the subject and activity types for each set of 561 measurements are 
 separated into 2 numeric vectors ( 2 vectors each of 2947 obs. X 1 variable and 7352 obs. X 1 variable). 
-For example following is the collection of data files in the test subdirectory:
+Following are the data files used for this project with their descriptions and dimensions.
+The collection of data files in the test subdirectory:
 
-File Name        | Description           | Dimension
------------------|-----------------------|---------------
-X_test.txt       | Test measurement file | (2947 X 561)
-subject_test.txt | subject id file       | (2947 X 1)
-y_test.txt       | activity id file      | (2947 X 1)
+File Name         | Description            | Dimension
+------------------|------------------------|---------------
+X_test.txt        | Test measurement file  | (2947 X 561)
+subject_test.txt  | subject id file        | (2947 X 1)
+y_test.txt        | activity id file       | (2947 X 1)
 
-The name for these measurements/variables and the activities are also provided in two 
+The collection of data files in the train subdirectory:
+
+File Name         | Description            | Dimension
+--------------- --|------------------------|---------------
+X_train.txt       | Train measurement file | (7352 X 561)
+subject_train.txt | subject id file        | (7352 X 1)
+y_train.txt       | activity id file       | (7352 X 1)
+
+The name for these measurements/variables and the activities are provided separately in two 
 "look up" type files. These files contain the ids of the variables and activity types 
-and the more meaning names for the type of measurements and activities.
+and the more meaningful names for the type of measurements and activities in the main UCI_HAR_Dataset directory:
+
+File Name         | Description            | Dimension
+--------------- --|------------------------|---------------
+activity_labels   | Activity names         | (6 X 2 )
+features.txt      | activity id file       | (561 X 2) 
 
 **Contents of the activity_lables.txt file:**
 
@@ -42,7 +56,8 @@ Activity id | Activity labels/names
   5         | STANDING
   6         | LAYING
 
-For example the number 1 is used as an id for Walking in the measurement file.
+For example the number 1 is used as an activity id in the measurement file while its name 
+"WALKING" is stored in the activity_labels.txt file along with its id.
  
 ##Data Processing Steps 
 
@@ -384,7 +399,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tBodyAccMag-mean()"
 
-**Description:** The average of the mean of calculating the Euclidean norm of the Body Jerk
+**Description:** The average of the Euclidean norm of the mean of the Body Jerk
  accelerometer measurement.
 
 **data type:** Real Number
@@ -394,7 +409,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tBodyAccMag-std()"
 
-**Description:** The average of the standard deviation of calculating the Euclidean norm of the Body Jerk
+**Description:** The average of the Euclidean norm of the of the standard deviation of the Body Jerk
  accelerometer measurement.
 
 **data type:** Real Number
@@ -404,7 +419,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tGravityAccMag-mean()"
 
-**Description:** The average of the mean of calculating the Euclidean norm of the Gravity Jerk
+**Description:** The average of the Euclidean norm of the mean of the Gravity Jerk
  accelerometer measurement.
 
 **data type:** Real Number
@@ -414,7 +429,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tGravityAccMag-std()"
 
-**Description:** The average of the standard deviation of calculating the Euclidean norm of the Gravity Jerk
+**Description:** The average of the Euclidean norm of the standard deviation of the Gravity Jerk
  accelerometer measurement.
 
 **data type:** Real Number
@@ -424,7 +439,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tBodyAccJerkMag-mean()"
 
-**Description:** The average of the mean of calculating the Euclidean norm of the Body Jerk
+**Description:** The average of the Euclidean norm of the mean of the Body Jerk
  accelerometer measurement.
 
 **data type:** Real Number
@@ -434,7 +449,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tBodyAccJerkMag-std()"
 
-**Description:** The average of the standard deviation of calculating the Euclidean norm of the Body Jerk
+**Description:** The average of the Euclidean norm of the standard deviation of the Body Jerk
  accelerometer measurement.
 
 **data type:** Real Number
@@ -444,7 +459,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tBodyGyroMag-mean()"
 
-**Description:** The average of the mean of calculating the Euclidean norm of the Body
+**Description:** The average of the Euclidean norm of the mean of the Body
  gyroscope measurement.
 
 **data type:** Real Number
@@ -454,7 +469,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tBodyGyroMag-std()"
 
-**Description:** The average of the mean of calculating the Euclidean norm of the Body
+**Description:** The average of the Euclidean norm of the mean of the Body
  gyroscope measurement.
 
 **data type:** Real Number
@@ -464,7 +479,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tBodyGyroJerkMag-mean()"
 
-**Description:** The average of the mean of calculating the Euclidean norm of the Body Jerk
+**Description:** The average of the Euclidean norm of the mean of the Body Jerk
  gyroscope measurement.
 
 **data type:** Real Number
@@ -474,7 +489,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "tBodyGyroJerkMag-std()"
 
-**Description:** The average of the standard deviation of calculating the Euclidean norm of the Body Jerk
+**Description:** The average of the Euclidean norm of the standard deviation of the Body Jerk
  gyroscope measurement.
 
 **data type:** Real Number
@@ -484,7 +499,7 @@ with angular velocity to derive in time Jerk signals.
 ------------------------------------------------------------------------------
 **Name:** "fBodyAcc-mean()-X"
 
-**Description:** The average of the mean of applying the Fast Fourier Transform to its original counterpart - 
+**Description:** The average of applying the Fast Fourier Transform to the mean of
 the body accelerometer measurement.
 
 **data type:** Real Number
@@ -494,7 +509,7 @@ the body accelerometer measurement.
 ------------------------------------------------------------------------------
 **Name:** "fBodyAcc-mean()-Y"
 
-**Description:** The average of the mean of applying the Fast Fourier Transform to its original counterpart - 
+**Description:** The average of applying the Fast Fourier Transform to the mean of  
 the body accelerometer measurement.
 
 **data type:** Real Number
@@ -504,8 +519,8 @@ the body accelerometer measurement.
 ------------------------------------------------------------------------------
 **Name:** "fBodyAcc-mean()-Z"
 
-**Description:** The average of the mean of applying the Fast Fourier Transform to its original counterpart - 
-the body accelerometer measurement.
+**Description:** The average of applying the Fast Fourier Transform to 
+the mean of the body accelerometer measurement.
 
 **data type:** Real Number
 
@@ -514,7 +529,7 @@ the body accelerometer measurement.
 ------------------------------------------------------------------------------
 **Name:** "fBodyAcc-std()-X"
 
-**Description:** The average of the standard deviation of applying the Fast Fourier Transform to its original counterpart - 
+**Description:** The average of applying the Fast Fourier Transform to the standard deviation of 
 the body accelerometer measurement.
 
 **data type:** Real Number
@@ -524,7 +539,7 @@ the body accelerometer measurement.
 ------------------------------------------------------------------------------
 **Name:** "fBodyAcc-std()-Y"
 
-**Description:** The average of the standard deviation of applying the Fast Fourier Transform to its original counterpart - 
+**Description:** The average of applying the Fast Fourier Transform to the standard deviation of
 the body accelerometer measurement.
 
 **data type:** Real Number
@@ -534,7 +549,7 @@ the body accelerometer measurement.
 ------------------------------------------------------------------------------
 **Name:** "fBodyAcc-std()-Z"
 
-**Description:** The average of the standard deviation of applying the Fast Fourier Transform to its original counterpart - 
+**Description:** The average of applying the Fast Fourier Transform to the standard deviation of
 the body accelerometer measurement.
 
 **data type:** Real Number
@@ -542,37 +557,336 @@ the body accelerometer measurement.
 **range:**  -1 to +1
 
 ------------------------------------------------------------------------------
+**Name:** "fBodyAcc-meanFreq()-X"
 
-"fBodyAcc-meanFreq()-X"
-"fBodyAcc-meanFreq()-Y"
-"fBodyAcc-meanFreq()-Z"
-"fBodyAccJerk-mean()-X"
-"fBodyAccJerk-mean()-Y"
-"fBodyAccJerk-mean()-Z"
-"fBodyAccJerk-std()-X"
-"fBodyAccJerk-std()-Y"
-"fBodyAccJerk-std()-Z"
-"fBodyAccJerk-meanFreq()-X"
-"fBodyAccJerk-meanFreq()-Y"
-"fBodyAccJerk-meanFreq()-Z"
-"fBodyGyro-mean()-X"
-"fBodyGyro-mean()-Y"
-"fBodyGyro-mean()-Z"
-"fBodyGyro-std()-X"
-"fBodyGyro-std()-Y"
-"fBodyGyro-std()-Z"
-"fBodyGyro-meanFreq()-X"
-"fBodyGyro-meanFreq()-Y"
-"fBodyGyro-meanFreq()-Z"
-"fBodyAccMag-mean()"
-"fBodyAccMag-std()"
-"fBodyAccMag-meanFreq()"
-"fBodyBodyAccJerkMag-mean()"
-"fBodyBodyAccJerkMag-std()"
-"fBodyBodyAccJerkMag-meanFreq()"
-"fBodyBodyGyroMag-mean()"
-"fBodyBodyGyroMag-std()"
-"fBodyBodyGyroMag-meanFreq()"
-"fBodyBodyGyroJerkMag-mean()"
-"fBodyBodyGyroJerkMag-std()"
-"fBodyBodyGyroJerkMag-meanFreq()"
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAcc-meanFreq()-Y"
+
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAcc-meanFreq()-Z"
+
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+
+**Name:** "fBodyAccJerk-mean()-X"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial mean body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccJerk-mean()-Y"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial mean body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccJerk-mean()-Z"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial mean body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccJerk-std()-X"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial standard deviation body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+
+**Name:** "fBodyAccJerk-std()-Y"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial standard deviation body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+
+**Name:** "fBodyAccJerk-std()-Z"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial standard deviation body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccJerk-meanFreq()-X""
+
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccJerk-meanFreq()-Y""
+
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccJerk-meanFreq()-Z""
+
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-mean()-X"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial mean body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-mean()-Y"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial mean body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-mean()-Z"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial mean body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-std()-X"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial standard deviation body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-std()-Y"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial standard deviation body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-std()-Z"
+
+**Description:** The average of applying the Fast Fourier Transform to
+one of the three triaxial standard deviation body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-meanFreq()-X"
+
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-meanFreq()-Y"
+
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyGyro-meanFreq()-Z"
+
+**Description:** The average of applying the Fast Fourier Transform to
+the weighted mean of the frequency component of one of the three triaxial body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccMag-mean()"
+
+**Description:** The average of applying the Fast Fourier Transform to the mean of the Euclidean norm of the Body
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccMag-std()"
+
+**Description:** The average of applying the Fast Fourier Transform to the standard deviation of the Euclidean norm of the Body
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAccMag-meanFreq()"
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of the weighted mean of the frequency component of Body
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyAccJerkMag-mean()"
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of the mean of the Body
+ Jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyAccJerkMag-std()"
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of the standard deviation of the Body
+ Jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyAccJerkMag-meanFreq()""
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of
+the weighted mean of the frequency component of body jerk accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyGyroMag-mean()""
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of
+the mean of the body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyGyroMag-std()""
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of
+the standard deviation of the body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyGyroMag-meanFreq()""
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of
+the weighted mean of the frequency component of the body gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyGyroJerkMag-mean()""
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of
+the mean of the body jerk gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyGyroJerkMag-std()""
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of
+the standard deviation of the body jerk gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyBodyGyroJerkMag-meanFreq()""
+
+**Description:** The average of applying the Fast Fourier Transform to the Euclidean norm of
+the weighted mean of frequency component of the body jerk gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+
