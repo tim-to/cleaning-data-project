@@ -63,7 +63,7 @@ a unique combination of subject and activity on its own row. Finally, all rows i
 dataset have exactly the same semantic meaning and therefore the same type of observations
 as defined in the "What are the observations" section. 
 
-*According to the tidy data set definition, **this is a tidy dataset.**
+*According to the tidy data set definition, this is a tidy dataset.*
 
 
 #run_analysis.R Explanation
@@ -134,8 +134,8 @@ names.**
 	}
 
 :thumbsup:
-**If you are interested in read the provided tidy dataset into your own R development 
-environment, use this command to read it from your working directory:**
+**If you are interested in reading the provided tidy dataset into your own R development 
+environment, download it to your R working directory and use this command to read it:**
 
     read.table("final_fitbit.txt", header = TRUE)
 
