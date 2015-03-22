@@ -31,7 +31,7 @@ y_test.txt        | activity id file       | (2947 X 1)
 The collection of data files in the train subdirectory:
 
 File Name         | Description            | Dimension
---------------- --|------------------------|---------------
+------------------|------------------------|---------------
 X_train.txt       | Train measurement file | (7352 X 561)
 subject_train.txt | subject id file        | (7352 X 1)
 y_train.txt       | activity id file       | (7352 X 1)
@@ -41,7 +41,7 @@ The name for these measurements/variables and the activities are provided separa
 and the more meaningful names for the type of measurements and activities in the main UCI_HAR_Dataset directory:
 
 File Name         | Description            | Dimension
---------------- --|------------------------|---------------
+------------------|------------------------|---------------
 activity_labels   | Activity names         | (6 X 2 )
 features.txt      | activity id file       | (561 X 2) 
 
