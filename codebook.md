@@ -190,42 +190,359 @@ run_analysis script works, please refer to this project's [README file](https://
 **range:**  -1 to +1
 
 ------------------------------------------------------------------------------
-""
+**Name:** "tBodyAccJerk-mean()-X"
 
-"tBodyAccJerk-mean()-X"
-"tBodyAccJerk-mean()-Y"
-"tBodyAccJerk-mean()-Z"
-"tBodyAccJerk-std()-X"
-"tBodyAccJerk-std()-Y"
-"tBodyAccJerk-std()-Z"
-"tBodyGyro-mean()-X"
-"tBodyGyro-mean()-Y"
-"tBodyGyro-mean()-Z"
-"tBodyGyro-std()-X"
-"tBodyGyro-std()-Y"
-"tBodyGyro-std()-Z"
-"tBodyGyroJerk-mean()-X"
-"tBodyGyroJerk-mean()-Y"
-"tBodyGyroJerk-mean()-Z"
-"tBodyGyroJerk-std()-X"
-"tBodyGyroJerk-std()-Y"
-"tBodyGyroJerk-std()-Z"
-"tBodyAccMag-mean()"
-"tBodyAccMag-std()"
-"tGravityAccMag-mean()"
-"tGravityAccMag-std()"
-"tBodyAccJerkMag-mean()"
-"tBodyAccJerkMag-std()"
-"tBodyGyroMag-mean()"
-"tBodyGyroMag-std()"
-"tBodyGyroJerkMag-mean()"
-"tBodyGyroJerkMag-std()"
-"fBodyAcc-mean()-X"
-"fBodyAcc-mean()-Y"
-"fBodyAcc-mean()-Z"
-"fBodyAcc-std()-X"
-"fBodyAcc-std()-Y"
-"fBodyAcc-std()-Z"
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body accelerometer measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccJerk-mean()-Y"
+
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body accelerometer measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccJerk-mean()-Z"
+
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body accelerometer measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccJerk-std()-X"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body accelerometer measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccJerk-std()-Y"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body accelerometer measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccJerk-std()-Z"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body accelerometer measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyro-mean()-X"
+
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body gyroscope measurement. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyro-mean()-Y"
+
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body gyroscope measurement. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyro-mean()-Z"
+
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body gyroscope measurement. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyro-std()-X"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body gyroscope measurement. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyro-std()-Y"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body gyroscope measurement. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyro-std()-Z"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body gyroscope measurement. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroJerk-mean()-X"
+
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body gyroscope measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroJerk-mean()-Y"
+
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body gyroscope measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroJerk-mean()-Z"
+
+**Description:** The average of the mean of one of the three time domain, normalized 
+triaxial body gyroscope measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroJerk-std()-X"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body gyroscope measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroJerk-std()-Y"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body gyroscope measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroJerk-std()-Z"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized 
+triaxial body gyroscope measurement. This measurement also combines the linear acceleration  
+with angular velocity to derive in time Jerk signals. 
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccMag-mean()"
+
+**Description:** The average of the mean of calculating the Euclidean norm of the Body Jerk
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccMag-std()"
+
+**Description:** The average of the standard deviation of calculating the Euclidean norm of the Body Jerk
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tGravityAccMag-mean()"
+
+**Description:** The average of the mean of calculating the Euclidean norm of the Gravity Jerk
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tGravityAccMag-std()"
+
+**Description:** The average of the standard deviation of calculating the Euclidean norm of the Gravity Jerk
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccJerkMag-mean()"
+
+**Description:** The average of the mean of calculating the Euclidean norm of the Body Jerk
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAccJerkMag-std()"
+
+**Description:** The average of the standard deviation of calculating the Euclidean norm of the Body Jerk
+ accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroMag-mean()"
+
+**Description:** The average of the mean of calculating the Euclidean norm of the Body
+ gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroMag-std()"
+
+**Description:** The average of the mean of calculating the Euclidean norm of the Body
+ gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroJerkMag-mean()"
+
+**Description:** The average of the mean of calculating the Euclidean norm of the Body Jerk
+ gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyGyroJerkMag-std()"
+
+**Description:** The average of the standard deviation of calculating the Euclidean norm of the Body Jerk
+ gyroscope measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAcc-mean()-X"
+
+**Description:** The average of the mean of applying the Fast Fourier Transform to its original counterpart - 
+the body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAcc-mean()-Y"
+
+**Description:** The average of the mean of applying the Fast Fourier Transform to its original counterpart - 
+the body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAcc-mean()-Z"
+
+**Description:** The average of the mean of applying the Fast Fourier Transform to its original counterpart - 
+the body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAcc-std()-X"
+
+**Description:** The average of the standard deviation of applying the Fast Fourier Transform to its original counterpart - 
+the body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAcc-std()-Y"
+
+**Description:** The average of the standard deviation of applying the Fast Fourier Transform to its original counterpart - 
+the body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "fBodyAcc-std()-Z"
+
+**Description:** The average of the standard deviation of applying the Fast Fourier Transform to its original counterpart - 
+the body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+
 "fBodyAcc-meanFreq()-X"
 "fBodyAcc-meanFreq()-Y"
 "fBodyAcc-meanFreq()-Z"
