@@ -32,8 +32,8 @@ should be part of the tidy dataset.
 #What are the observations 
 
 As stated by the project instructions:
-> creates a second, independent tidy data set with the average of each variable for each 
-> activity and each subject.
+> creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
 The observations (rows) should show the averages of each variable for each unique 
 combination of activities and subjects. 
 Therefore, the initial dataset should be re-organized according to the 
@@ -66,9 +66,9 @@ as defined in the "What are the observations" section.
 #run_analysis.R explanation
 
 **Load the test data**
-	`test.x <- read.table("UCI_HAR_Dataset/test/X_test.txt")
+	test.x <- read.table("UCI_HAR_Dataset/test/X_test.txt")
 	test.y <- read.table("UCI_HAR_Dataset/test/Y_test.txt")
-	test.subject <- read.table("UCI_HAR_Dataset/test/subject_test.txt")`
+	test.subject <- read.table("UCI_HAR_Dataset/test/subject_test.txt")
 
 **Load the train data**
 	`train.x <- read.table("UCI_HAR_Dataset/train/X_train.txt")
