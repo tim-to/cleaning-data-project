@@ -22,7 +22,7 @@ separated into 2 numeric vectors ( 2 vectors each of 2947 obs. X 1 variable and 
 For example following is the collection of data files in the test subdirectory:
 
 File Name        | Description           | Dimension
---------------------------------------------------------
+-----------------|-----------------------|---------------
 X_test.txt       | Test measurement file | (2947 X 561)
 subject_test.txt | subject id file       | (2947 X 1)
 y_test.txt       | activity id file      | (2947 X 1)
@@ -35,7 +35,7 @@ activities.
 **Contents of the activity_lables.txt file:**
 
 Activity id | Activity labels/names
------------------------------------
+------------|----------------------
   1         | WALKING
   2         | WALKING_UPSTAIRS
   3         | WALKING_DOWNSTAIRS
@@ -59,17 +59,20 @@ run_analysis script works, please refer to this project's [README file](https://
 
 ##Data Dictionary
 
-name: "subjects"
-Description: These are the 30 human subject performed the 6 different activties and generated the original raw motion measurements.
-data type: Integer 
-range: 1 - 30
+**Name:** "subjects"
 
-Name: "activities"
-Description: These are the 6 activity types each human subject performed.
-data type: character 
-range: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"   
+**Description:** These are the 30 human subject performed the 6 different activties and generated the original raw motion measurements.
 
-Name: "tBodyAcc-mean()-X"
+**data type:** Integer 
+
+**range:** 1 - 30
+
+**Name:** "activities"
+**Description:** These are the 6 activity types each human subject performed.
+**data type:** character 
+**range:** "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"   
+
+**Name:** "tBodyAcc-mean()-X"
 "tBodyAcc-mean()-Y"
 "tBodyAcc-mean()-Z"
 "tBodyAcc-std()-X"
