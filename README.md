@@ -2,7 +2,7 @@
 This dataset contains the averages of mean and standard deviations from the wearable 
 device project conducted by Davide Anguita et al. (see References 1) 
 
-#Source Data File
+##Source Data File
 For a more complete description of the source data file please refer to this project's [codebook.](https://github.com/tim-to/cleaning-data-project/blob/master/codebook.md)
 The [zipped data file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
 is downloaded into the working directory of R and where the run_analysis.R script resides. 
@@ -11,10 +11,12 @@ All the data files for this project is unzipped into the UCI_HAR_Dataset subdire
 the R working directory. All data files are read from these local directories: 
 
 UCI_HAR_Dataset/
+
 UCI_HAR_Dataset/test/
+
 UCI_HAR_Dataset/train/
 
-#Which variables are selected for processing
+##Which Variables Are Processed
 The project instructions states that only mean and standard deviation measurements should
 be included in a tidy dataset. 
 This dataset includes all data with measurement names including the word mean and std. 
@@ -31,7 +33,7 @@ next section only
 should be part of the tidy dataset.
 
 
-#What are the observations 
+##What are the observations 
 
 As stated by the project instructions:
 > creates a second, independent tidy data set with the average of each variable for each activity and each subject.
@@ -51,7 +53,7 @@ Subjects | Activities | mean 1 | mean 2 | standard deviation 1 | ...
 There are (30 subjects * 6 activities) 180 unique combinations/observations in the tidy 
 data set.
 
-#The tidy dataset
+##The Tidy Dataset
 The dataset produced by this run_analysis.R script produce a dataset that is compliant
 with the tidy data definition (from [Hadley Wickham's article](http://www.jstatsoft.org/v59/i10/paper)):
 
@@ -67,7 +69,7 @@ as defined in the "What are the observations" section.
 *According to the tidy data set definition, this is a tidy dataset.*
 
 
-#run_analysis.R Explanation
+##run_analysis.R Explanation
 
 **Load the test data**
 

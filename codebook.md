@@ -10,8 +10,8 @@ organize it to only process the mean and standard deviation of these measurement
 The original data was collected using 30 human subjects wearing electronic measuring 
 devices which record the subjects' geospatial 3D locations performing six types of 
 activities. These measurements were then filtered and transformed in multiple stages into
-different types of measurements. These measurements (561 of them) are the variables for 
-this project. 
+different types of measurements. Each measurement is normalized and bounded to the range of 
+(-1, +1). These measurements (561 of them) are the variables for this project. 
 
 The measurements were arbitrarily separated into a training (7352 observations X 561 
 variables) and testing (2947 observations X 561 variables) sets of data. 
@@ -28,9 +28,8 @@ subject_test.txt | subject id file       | (2947 X 1)
 y_test.txt       | activity id file      | (2947 X 1)
 
 The name for these measurements/variables and the activities are also provided in two 
-"look up" type files containing the ids of the variables and activity types contained in 
-the measurement files and the more meaning names for the type of measurements and 
-activities.
+"look up" type files. These files contain the ids of the variables and activity types 
+and the more meaning names for the type of measurements and activities.
 
 **Contents of the activity_lables.txt file:**
 
@@ -73,7 +72,7 @@ run_analysis script works, please refer to this project's [README file](https://
 
 **Description:** These are the 6 activity types each human subject performed.
 
-**data type:** character 
+**data type:** Character 
 
 **range:** "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"   
 
@@ -81,25 +80,118 @@ run_analysis script works, please refer to this project's [README file](https://
 
 **Name:** "tBodyAcc-mean()-X"
 
-**Description:** One of the three time domain, normalized triaxial body accelerometer measurement.
+**Description:** The average of the mean of one of the three time domain, normalized triaxial body accelerometer measurement.
 
-**data type:** real 
+**data type:** Real Number
 
 **range:**  -1 to +1
+
 ------------------------------------------------------------------------------
 
+**Name:** "tBodyAcc-mean()-Y"
 
-"tBodyAcc-mean()-Y"
-"tBodyAcc-mean()-Z"
-"tBodyAcc-std()-X"
-"tBodyAcc-std()-Y"
-"tBodyAcc-std()-Z"
-"tGravityAcc-mean()-X"
-"tGravityAcc-mean()-Y"
-"tGravityAcc-mean()-Z"
-"tGravityAcc-std()-X"
-"tGravityAcc-std()-Y"
-"tGravityAcc-std()-Z"
+**Description:** The average of the mean of one of the three time domain, normalized triaxial body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+
+**Name:** "tBodyAcc-mean()-Z"
+
+**Description:** The average of the mean of one of the three time domain, normalized triaxial body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAcc-std()-X"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized triaxial body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAcc-std()-Y"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized triaxial body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tBodyAcc-std()-Z"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized triaxial body accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+
+**Name:** "tGravityAcc-mean()-X"
+
+**Description:** The average of the mean of one of the three time domain, normalized triaxial gravity accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+
+**Name:** "tGravityAcc-mean()-Y"
+
+**Description:** The average of the mean of one of the three time domain, normalized triaxial gravity accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tGravityAcc-mean()-Z"
+
+**Description:** The average of the mean of one of the three time domain, normalized triaxial gravity accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tGravityAcc-std()-X"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized triaxial gravity accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tGravityAcc-std()-Y"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized triaxial gravity accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+**Name:** "tGravityAcc-std()-Z"
+
+**Description:** The average of the standard deviation of one of the three time domain, normalized triaxial gravity accelerometer measurement.
+
+**data type:** Real Number
+
+**range:**  -1 to +1
+
+------------------------------------------------------------------------------
+""
+
 "tBodyAccJerk-mean()-X"
 "tBodyAccJerk-mean()-Y"
 "tBodyAccJerk-mean()-Z"
