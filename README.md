@@ -3,6 +3,7 @@ This dataset contains the averages of mean and standard deviations from the wear
 device project conducted by Davide Anguita et al. (see References 1) 
 
 #Source Data File
+For a more complete description of the source data file please refer to this project's [codebook.](https://github.com/tim-to/cleaning-data-project/blob/master/codebook.md)
 The [zipped data file](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
 is downloaded into the working directory of R and where the run_analysis.R script resides. 
 

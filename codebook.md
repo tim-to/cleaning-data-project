@@ -73,6 +73,10 @@ run_analysis script works, please refer to this project's [README file](https://
 **range:** "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"   
 
 **Name:** "tBodyAcc-mean()-X"
+**Description:** One of the three time domained, normalized triaxial body accelerometer measurement.
+**data type:** real 
+**range:**  -1 to +1
+
 "tBodyAcc-mean()-Y"
 "tBodyAcc-mean()-Z"
 "tBodyAcc-std()-X"
