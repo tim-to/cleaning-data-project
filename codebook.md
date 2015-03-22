@@ -1,7 +1,7 @@
 #Project Description
 
-We are to download the "Human Activity Recognition Using Smartphones Dataset", clean and
-organize it to only process the mean and standard deviation of these measurements as variables and
+We are to download the ["Human Activity Recognition Using Smartphones Dataset"](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), 
+clean and organize it to only process the mean and standard deviation of these measurements as variables and
 
 > creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
@@ -68,7 +68,7 @@ For example the number 1 is used as an activity id in the measurement file while
 5. Organize the measurements base on the subject and activities.
 6. Replace the activity ids with their more meaningful names.
 
-For a more detail description of how the resultant dataset is a tidy dataset and how the 
+For a more detail description of why the resultant dataset is a tidy dataset and how the 
 run_analysis script works, please refer to this project's [README file](https://github.com/tim-to/cleaning-data-project/blob/master/README.md) 
 
 ##Data Dictionary
